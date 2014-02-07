@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Veronica's Weather Widget</title>
+        <style type="text/css">
+			 @import url("css/960.css");
+		  	 @import url("css/reset.css");
+		  	 @import url("css/text.css");
+             @import url("css/style.css");
+        </style> 
+        <script type="text/javascript" src="js/a2.js">
+        </script>  
+    </head>    
+    <body>
+    	<div class = "container_12">
+        	<div class = "grid_12">
+            	<div id = "main_container">
+                <div class = "grid_4">
+                        <div id = "form_container">
+                            <h3> Welcome to WeatherWidget!</h3>
+                            <form id = "weatherform" action = "">
+                                <div>
+                                  <label for ="location">Enter a zip code:</label><br/>
+                                    <input id = "location" type = "text"/>
+                                    <input type = "submit" value = "Update" />
+                                </div> 
+                                <div id = "progress">
+                        		</div> 
+                                <hr/>     
+                            </form> 
+                        </div>           
+                        <div id = "results_container">
+                        </div>
+                   </div>
+                   <div class = "grid_5">
+                   		<!--<div id = "events_title">
+                        </div>-->
+                        <div id = "events_container">
+                        </div>
+                    </div>
+                 </div>
+            </div>
+         </div>
+    </body>
+</html>

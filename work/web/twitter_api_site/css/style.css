@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* Veronica Vega - Assignment 4 CSS */
+body
+{
+	background-image: url('../img/bg.png');
+}
+#yes
+{
+	float: left;
+	width:400px;
+	margin:27px;
+
+}
+#no
+{
+	float: right;
+		width:400px;
+		margin:27px;
+		margin-right: 45px;
+
+
+}
+#hdr
+{
+	background-image: url('../img/content_hdr.png');
+	width: 940px;
+	background-repeat:no-repeat;
+	height: 220px;
+	float:left;
+}
+#main_content
+{
+		background-image: url('../img/content_bg.png');background-repeat:repeat-y;
+		float:left;
+		margin-top: -11px;
+}
+.tweet_text
+{
+	color:#06F;
+}
+.result_hdrs
+{
+	margin-left:30px;
+	margin-right:auto;
+}
+#tweet
+{
+	max-width: 930px;
+	width:800px;
+	float: left;
+	margin:27px;
+	margin-right: 25px;
+	margin-left: 35px;
+	font-size: 20px;
+}
+#content_footer
+{
+	background-image: url('../img/content_footer.png');
+	width: 940px;
+	height: 250px;
+	float: left;
+	font-size:20px;
+	text-align:center;
+}
+#yes_btn
+{
+		background: url('../img/would.png');
+		background-position: -12px 0px;
+		border: none;
+		padding: none;
+		width: 120px;
+		height: 40px;
+}
+#yes_btn:hover
+{
+	background-position: -142px 0px;
+}
+#yes_btn:active
+{
+	background-position: -273px 0px;
+}
+#no_btn
+{
+	background: url('../img/wouldnt.png');
+	background-position: -12px 0px;
+	border: none;
+	padding: none;
+	width: 120px;
+	height: 40px;
+}
+#no_btn:hover
+{
+	background-position: -142px 0px;
+}
+#no_btn:active
+{
+	background-position: -273px 0px;
+}
+#the_form
+{
+	text-align:center;
+	width: 960px;
+	float:left;
+}
+#sign_in
+{
+	margin-top: 30px;
+	float:left;
+	margin-bottom: 40px;
+	width: 960px;
+	height: 100px;
+	text-align:center;
+}

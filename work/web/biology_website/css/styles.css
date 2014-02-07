@@ -1,0 +1,325 @@
+@charset "utf-8";
+/* Veronica Vega - Assignment 02 Styles */
+*
+{
+	margin:0;
+	padding:0;
+}
+
+
+body {
+	background-color: #39690e;
+	color: #39690e;
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+/* NAVIGATION */
+#navigation
+{
+	background-color: #39690e;
+	width: 250px;
+	height: 298px;
+	margin-left: 12px;
+	margin-top: 65px;
+}
+#navigation ul {
+	list-style-type:none;
+	border: 1px solid #39690e;
+	width: 238px;
+	margin-left: 10px;
+	height: 296px;
+	padding: 0px;
+	background-image: url("../img/nav_bar.png");
+	background-position: 36px;
+}
+#navigation li
+{
+	height: 74px;
+	border-bottom: 1px solid #39690e;
+	margin-left: 0px;
+	padding-left: 0;
+	color: #39690e;
+
+}
+#navigation li:last-child
+{
+	height: 71px;
+}
+#home:hover
+{
+	color: #9bce6e;
+}
+#spotlight:hover
+{
+	color: #9bce6e;
+}
+#research:hover
+{
+	color: #9bce6e;
+}
+#about:hover
+{
+	color:#9bce6e;
+}
+#navigation a 
+{
+	color: inherit;
+	text-decoration: none;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 36px;
+	min-width: 100px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	padding-right: 0;
+	
+}
+/*CONTENT*/
+#banner
+{
+	height: 68px;
+	width: 940px;
+	background-image: url("../img/bio_banner.png");
+	border-bottom: 2px solid #39690e;
+
+}
+#page_title
+{
+	font-size: 30px;
+	color: #39690e;
+	width: 100px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	text-align: center;
+	margin-left: 150px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+#top_content
+{
+	width: 605px;
+	height: 400px;
+	background-image: url("../img/tab_graphic.png");
+	float: right;
+	margin-right: 30px;
+}
+#spotlight_top_content
+{
+	width: 605px;
+	height: 555px;
+	background-image: url("../img/tab_graphic_spotlight.png");
+	float: right;
+	margin-right: 30px;
+}
+#about_top_content
+{
+	width: 605px;
+	height: 400px;
+	background-image: url("../img/tab_graphic_about.png");
+	float: right;
+	margin-right: 30px;
+}
+#research_top_content
+{
+	width: 605px;
+	height: 555px;
+	background-image: url("../img/tab_graphic_research.png");
+	float: right;
+	margin-right: 30px;
+}
+#r_img
+{
+	height: 300px;
+	background-image: url("../img/pelican.png");
+	margin-bottom: 20px;
+	max-width: 130px;
+	border: 2px solid #CCC;
+}
+#welcome
+{
+	margin-top: 90px;
+	margin-left: 35px;
+	width: 345px;
+}
+#welcome h2
+{
+	
+	margin-top: 10px;
+	font-size: 14px;
+	width: 345px;
+	text-align:left;
+}
+#h_img
+{
+	width: 180px;
+	height: 269px; 
+	margin-top: -250px;
+	margin-right: 30px;
+	background-image: url("../img/home_img.png");
+	background-position: top;
+	float: right;
+	
+}
+#spotlight_welcome
+{
+	margin-top: 70px;
+	margin-left: 35px;
+	width: 530px;
+}
+#spotlight_welcome h2
+{
+	font-size: 18px;
+	margin-top:3px;
+}
+#spotlight_welcome h3
+{
+	margin-bottom: 0;
+}
+#s_img
+{
+	background-image: url('../img/seminar.png');
+	height: 230px;
+	width: 400px;
+	margin-left: 70px;
+	margin-top: 10px;
+	repeat:no-repeat;
+}
+#research_welcome
+{
+	margin-top: 70px;
+	margin-left: 35px;
+	width: 530px;
+}
+#research_content2
+{
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	border-bottom: 2px solid #CCC;
+	border-right: 2px solid #CCC;
+}
+#about_welcome
+{
+	margin-top: 70px;
+	margin-left: 35px;
+	width: 530px;
+}
+#about_welcome h2
+{
+	font-size: 20px;
+}
+#content1
+{
+	padding: 20px;
+	padding-right: 10px;
+	margin-top: 20px;
+}
+#content2
+{
+	float: right;
+	margin-top: 110px;
+	margin-left: 10px;
+	padding: 10px;
+	padding-left: 10px;
+	border-left: 1px solid #CCC;
+}
+ h2
+{
+	text-align: center;
+	font-size: 30px;
+}
+.list
+{
+	width: 440px;
+	margin-left: 30px;
+	
+}
+#spotlight_content1
+{
+	margin-left: 20px;
+	margin-top: 20px;
+}
+#spotlight_content2
+{
+	margin-left: 20px;
+	margin-top: 20px;
+}
+#spotlight_content3
+{
+	margin-left: 20px;
+	margin-top: 20px;
+}
+#spotlight_content3 h3
+{
+	text-align:center;
+}
+#spotlight_content4
+{
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+
+#research_content1
+{
+	margin-left: 20px;
+	margin-top: 20px;
+}
+#research_content2
+{
+	margin-left: 20px;
+	margin-top: 20px;
+		margin-right: 20px;
+}
+#research_content3
+{
+	margin-left: 20px;
+	margin-top: 20px;
+		margin-right: 20px;
+}
+#research_content3 h3
+{
+	text-align:center;
+}
+#research_content4
+{
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 20px;
+}
+#about_content1
+{
+	margin-left: 20px;
+	margin-top: 20px;
+	margin-right: 20px;
+}
+#about_content3
+{
+	margin-left: 20px;
+	margin-top: 20px;
+	margin-right: 20px;
+}
+#content2 li
+{
+	margin-left: 30px;
+	margin-right: -50px;
+	list-style-type:circle;
+}
+#content2 h3
+{
+	font-size: 16px;
+	text-align:center;
+}
+#content_title
+{
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	border-bottom: 1px solid #CCC;
+}
+#footer
+{
+	text-align:center;
+	padding-bottom: 30px;
+}
+#footer_margin
+{
+	background-color:#39690e;
+	height: 40px;
+}

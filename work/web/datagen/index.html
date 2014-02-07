@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+
+    <title>Sample Data Generator</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+    <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="page-header">
+		
+		<h1><span style="margin-right: 20px;" class = "glyphicon glyphicon-stats"></span>Sample Data Generator</h1>
+		<div id = "credits">
+				<div id ="nee">
+					<h4 style="color:#555; float:right; margin: -20px 73px 23px 27px; width:410px">
+<span class="label label-info">Project Concept & Requirements by</span>
+<span style="font-size: 14px;"> Courtney Penn </span>
+<br>
+<div style="float:right; margin-top: 5px; margin-right: 13px; font-size:12px">
+							(<a href="mailto:coupenn@gmail.com">coupenn@gmail.com</a>)
+						</div>
+					</h4>
+				</div>
+								<div id = "vee">
+					<div>
+						<h4 style="float:left; margin: -15px 0 12px 50px;"><span class="label label-info">Web Design &amp; Development by</span></h4><h4  style="color: #555; margin: -18px 0 7px 6px; font-size: 14px;">Veronica Vega
+						<img style="width: 64px; margin: 0 0 0 4px;" src="http://www.designethereal.com/img/logo_new.png">
+						<br>
+						<span style="color: #777; font-size: 12px; margin: 0 0 0 2px;">Interaction Designer and Developer</span>
+						</h4>
+					</div>
+					<ul style="float:right; margin: -8px 27px 0px 0px; padding:0;">
+					<li style="list-style-type: none; font-size: 10px; margin-bottom: 0px;"><img src ="http://www.designethereal.com/img/email.png" style="width:14px;"><div style="margin-top:-14px; margin-left:40px; color:#a073b1;"><a style="color:#a073b1;" href="mailto:veronica@designethereal.com">veronica@designethereal.com</div></li><li style="list-style-type: none; font-size: 10px; margin-bottom: 5px;"><img src ="http://www.designethereal.com/img/web.png" style="width:14px;"><div style="margin-top:-13px; margin-left:40px"><a style="color:#a073b1;" href="http://www.designethereal.com">www.designethereal.com</a></div></li></ul>
+				</div>
+			 </div>
+			</div>
+		</div>
+		<!--<p id = "credits"><h4>Web Design &amp; Development by <span class="label label-info">Veronica Vega (<a href="mailto:veronica@designethereal.com">veronica@designethereal.com</a>)</h4><br/>
+		<h4>Project Concept &amp; Requirements by <span class="label label-info">Courtney Penn (<a href="mailto:coupenn@gmail.com">coupenn@gmail.com</a>)</h4></p>-->
+	</div>
+	<div class="row">
+		<div class="container">
+			<div class="col-lg-7">
+				<div id = "canvas_container">
+					<canvas id = "y_arrow" width="50" height="500"></canvas>
+					<h3 id="step1"><span class="label label-default">Step 1:</span>&nbsp;Draw a Curve</h3>
+					<a class="btn btn-primary btn-lg" id="clear" onclick="clearCoords()" role="button">Clear Drawing</a>
+					<canvas id = "drawing" width="500" height="500"></canvas>
+					<canvas id = "x_arrow" width="500" height="50"></canvas>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<h3 id="step2"><span class="label label-default">Step 2:</span>&nbsp;Enter Graph Info</h3>
+				<div id="canvas_form">
+					<div class="input-group">
+						<span class="input-group-addon">XMIN</span>
+						<input type="text" id="xmin" class="form-control">
+					</div>
+					<div class="input-group">
+						<span class="input-group-addon">XMAX</span>
+						<input type="text" id="xmax" class="form-control">
+					</div>
+					<div class="input-group">
+						<span class="input-group-addon">YMIN</span>
+						<input type="text" id="ymin" class="form-control">
+					</div>
+					<div class="input-group">
+						<span class="input-group-addon">YMAX</span>
+						<input type="text" id="ymax" class="form-control">
+					</div>
+					<div class="input-group">
+						<span class="input-group-addon">YDEV</span>
+						<input type="text" id="ydev" class="form-control">
+					</div>
+				</div>
+				<h3 id="step3"><span class="label label-default">Step 3:</span>&nbsp;Enter Number of Tests</h3>
+				<div class="input-group" id="num_values_entry">
+				  <span class="input-group-addon">Number of tests:</span>
+				  <input type="text" class="form-control" id="num_tests">
+				  <div class="input-group-btn">
+						<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Type of x value&nbsp;<span class="caret"></span></button>
+						<ul class="dropdown-menu pull-right">
+						  <li onclick="showRandom()"><a href="#">Random</a></li>
+						  <li class="divider"></li>
+						  <li onclick="showFixed()"><a href="#">Fixed</a></li>
+						</ul>
+				  </div>	  <!-- /btn-group -->
+				</div>
+				<p class="generation_button"><a id="generate_random_button" style="display:none;" class="btn btn-primary btn-lg" onclick="processRandom()" data-loading-text="Generating..." role="button">Generate Random Data</a></p>
+			</div>		
+		</div>
+	</div>
+	<!-- error messages -->
+	<div class="row"  id="alert_container">
+		<div class="container">				
+
+				<div class="alert alert-danger alert-dismissable fade in" id="drawing_alert" style="display:none">
+					<button type="button" class="close" onclick="$('#drawing_alert').hide();" aria-hidden="true">&times;</button>
+					Please complete Step 1.
+				</div>
+
+
+				<div class="alert alert-danger alert-dismissable fade in" id="graph_info_alert" style="display:none">
+					<button type="button" class="close" onclick="$('#graph_info_alert').hide();" aria-hidden="true">&times;</button>
+				Please complete Step 2.
+				</div>
+
+
+				<div class="alert alert-danger alert-dismissable fade in" id="num_tests_alert" style="display:none">
+					<button type="button" class="close" onclick="$('#num_tests_alert').hide();" aria-hidden="true">&times;</button>Please complete Step 3.
+				</div>
+
+
+				<div class="alert alert-danger alert-dismissable fade in" id="step4_alert" style="display:none">
+					<button type="button" class="close" onclick="$('#step4_alert').hide();" aria-hidden="true">&times;</button>Please complete Step 4.
+				</div>
+
+				<div class="alert alert-danger alert-dismissable fade in" id="value_entry_alert" style="display:none">
+					<button type="button" class="close" onclick="$('#value_entry_alert').hide();" aria-hidden="true">&times;</button>Please complete Step 5.
+				</div>
+
+		</div>
+	</div>
+	<!---->
+	<div class="row">
+		<div class="container">
+			<div class="col-lg-12" id="tab_entry_section">
+				<div id="random_content">
+					<div class="panel panel-default" id="random_results_container" style="display:none;">
+						<table class = "table table-striped" id="random_results" style="display:none;"></table>
+					</div>					
+				</div>
+				<div id="fixed_content">
+					<ul class="nav nav-tabs nav-justified">
+					  <li class="active" value="0"><a href="#value_section" data-toggle="tab">Fixed Values</a></li>
+					  <li value="1"><a href="#interval_section" data-toggle="tab">Intervals</a></li>
+					</ul>
+					<div class="panel panel-default" id = "fixed_container">
+						<div class="tab-content">
+							<div class="tab-pane fade in active" id="value_section">
+								<div class="col-lg-12">
+									<h3><span class="label label-default">Step 4:</span>&nbsp;Enter Number of Possible x Values</h3>
+									<div class="col-lg-12">
+										<div class="input-group" id="num_values_group">
+											<span class="input-group-addon">Number of x values:</span>
+											<input type="text" class="form-control" id="num_values" onblur="addFields()">
+											<span class="input-group-addon glyphicon glyphicon-arrow-right"></span>
+										</div>
+	
+									</div>
+									<div id ="value_entry_container">
+										<h3 id = "step5" style="display:none;"><span class="label label-default">Step 5:</span>&nbsp;Enter Each x Value</h3>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade in" id="interval_section">
+								<div class="col-lg-12">
+									<h3><span class="label label-default">Step 4:</span>&nbsp;Enter Desired Interval</h3>
+									<div class="col-lg-12">
+										<div class="input-group">
+											<span class="input-group-addon">Interval amount:</span>
+											<input type="text" class="form-control" id="interval_amount">
+										</div>
+									</div>
+								</div>
+							</div>						
+						</div>
+					</div>
+					<div class="panel panel-default" id="results_container" style="display:none;">
+						<table class = "table table-striped" id="results" style="display:none;"></table>
+					</div>
+					<p class="generation_button"><a id="generate_fixed_button" class="btn btn-primary btn-lg" onclick="processFixed()" data-loading-text="Generating..." role="button">Generate Fixed Data</a></p>
+				</div>
+				<p class="generation_button"><a id = "excel_button" class="btn btn-primary btn-lg" onclick="saveToExcel()" style="display:none;" data-loading-text="Saving..." role="button">Save To Excel</a></p>
+			</div>
+		</div>
+	</div>
+	<!--Template elements-->
+	<div style="display:none">
+		<div id = "value_entry_template">
+			<div class="input-group">
+				<span class="input-group-addon"></span>
+				<input type="text" class="form-control">
+			</div>
+		</div>
+	</div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/canvas.js"></script>
+	<script src="js/script.js"></script>
+  </body>
+</html>

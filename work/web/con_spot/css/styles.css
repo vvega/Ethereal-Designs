@@ -1,0 +1,364 @@
+/* Veronica's CSS DIG 3003 */
+
+body{
+	background-color:#CCC;
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+#banner
+{
+	float:left;
+	margin-left: 40px;
+	margin-right:10px;
+}
+#home_content
+{
+	margin-top: 30px;
+}
+#about_content
+{
+	text-align:left;
+}
+#about_content h3
+{
+	text-align:left;
+	margin-left: 50px;
+}
+#container{
+	width: 960px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#logo
+{
+	width: 960px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:-20px;
+	border-bottom:3px double #000;
+	text-align:center;
+}
+#content
+{
+	background-image: url('../img/body_bg.png');
+	background-repeat: repeat-y;
+	width: 960px;
+	margin-top: -12px;
+	padding-top: 10px;
+	text-align:center;
+}
+#header
+{
+	width: 987px;
+	margin-left: -15px;
+	height: 480px;
+	background-image: url('../img/conspot.png');
+	
+}
+#content img
+{
+	border: 2px solid #666;
+}
+p
+{
+	text-indent: 40px;
+	text-align:left;
+	margin-left:40px;
+	margin-right:40px;
+}
+#nav
+{
+	float: left;
+    font-family: Georgia,"Times New Roman",Times,serif;
+    font-size: 30px;
+    margin-left: 15px;
+    margin-top: 115px;
+    text-decoration: none;
+}
+#footer 
+{
+	background-image: url('../img/footer.png');
+	height: 160px;
+	margin-top:-20px;
+}
+#logo
+{
+	background-image: url('../img/logo_small.png');
+	height:130px;
+	background-repeat:no-repeat;
+	margin-left:290px;
+	width:350px;
+	margin-top:50px;
+}
+#logo p
+{
+	margin-left: 170px;
+	padding-top: 20px;
+}
+#nav a
+{
+	color:#303;
+	text-decoration:none;
+}
+#nav a:hover
+{
+	color:#C9F;
+}
+#about_content img
+{
+	margin-left: 550px;
+}
+
+#nav li
+{
+	background-image: url("../img/nav.png");
+    display: inline;
+    height: 260px;
+    list-style-type: none;
+    text-decoration: none;
+}
+#benefits
+{
+	margin-top: -390px;
+	margin-left: 40px;
+}
+#about_logo
+{
+	background-image: url('../img/logo_small.png');
+	height:130px;
+	background-repeat:no-repeat;
+	margin-left:290px;
+	width:350px;
+	margin-top: 120px;
+}
+#about_logo p
+{
+	margin-left: 170px;
+	padding-top: 20px;
+}
+#geek img
+{
+	border: none;
+	margin-left: 180px;
+	margin-top: 20px;
+}
+#lists
+{
+	text-align:left;
+	margin-left: 45px;
+	margin-right: 20px;
+}
+#con_thumb
+{
+	float: right;
+	margin-right: 50px;
+	margin-left: 20px;
+	margin-top: 40px;
+}
+#resource_text img
+{
+	float:left;
+	margin-right: 20px;
+	border: 1px solid #000;
+}
+#home
+{
+	 min-width: 200px;
+    padding-left: 60px;
+    padding-right: 70px;
+}
+#about
+{
+	 min-width: 300px;
+    padding-left: 70px;
+    padding-right: 70px;
+	background-position: -130px 0;
+	
+}
+#resources
+{
+	background-position: -270px 0;
+	width: 500px;
+    padding-left: 60px;
+    padding-right: 169px;
+}
+#market
+{
+	background-position: -500px 0;
+	 min-width: 200px;
+    padding-left: 60px;
+    padding-right: 115px;
+}
+#profile
+{
+	background-position: -680px 0;
+	 min-width: 200px;
+    padding-left: 60px;
+    padding-right: 143px;
+}
+#home:hover
+{
+	cursor:pointer;
+	background-position: 0 47px;
+}
+#about:hover
+{
+	cursor:pointer;
+	background-position: -130px 47px;
+	
+}
+#resources:hover
+{
+	cursor:pointer;
+	background-position: -270px 47px;
+
+}
+#market:hover
+{
+	cursor:pointer;
+	background-position: -500px 47px;
+
+}
+#profile:hover
+{
+	cursor:pointer;
+	background-position: -680px 47px;
+
+}
+#login {
+    color: #CCCCCC;
+    margin-left: 588px;
+    padding-top: 277px;
+    width: 370px;
+}
+#login input[type="text"] {
+    background-color: #333333;
+    border: medium none;
+    color: #CCCCCC;
+    font-size: 10px;
+    width: 95px;
+    float: left;
+}
+#login input[type="password"] {
+    background-color: #333333;
+    border: medium none;
+    color: #CCCCCC;
+    font-size: 10px;
+    width: 95px;
+    float: right;
+}
+#username_field {
+    border: medium none;
+    font-size: 10px;
+    width: 30px;
+	float: left;
+	color:#333;
+	margin-left: 20px;
+	margin-top:20px;
+}
+#login_btn {
+    float: right;
+    margin-right: 30px;
+	margin-top:25px;
+	width: 85px;
+}
+#password_field {
+	margin-top:20px;
+    border: medium none;
+    float: left;
+    font-size: 10px;
+	color:#333;
+}
+#welcome
+{
+	text-align: center;
+	color:#333;
+	margin-top: -40px;
+	margin-bottom: 10px;
+}
+#registration_content
+{
+	border:none;
+	text-align:left;
+	margin-left: 40px;
+	
+}
+#items
+{
+	margin-left: 50px;
+	font-size: 12px;
+	background-color:#CCC;
+	
+}
+#items th
+{
+	font-size: 18px;
+	color:#CCC;
+	background-color:#639;
+}
+#user_items
+{
+	height: 300px;
+	overflow:auto;
+	width: 910px;
+}
+#registration
+{
+	border:none;
+	margin-left: 30px;
+}
+#social_feed
+{
+	height: 250px;
+	overflow:auto;
+	margin-left: 15px;
+	margin-right: 20px;
+}
+#home_content p
+{
+
+}
+#comments
+{
+	
+	font-size: 12px;
+	text-align:left;
+	background-color:#C9F;
+	width: 300px;
+	border: 2px solid #93F;
+	
+}
+#comments th
+{
+	font-size: 18px;
+	color:#CCC;
+	background-color:#639;
+}
+#comments td
+{
+	border-bottom: 1px solid #93F;
+}
+#home p
+{
+	margin-top: 40px;
+}
+#sell_form
+{
+	text-align:left;
+	margin-left: 60px;
+}
+#sell_form input[type="text"]
+{
+	width: 400px;
+}
+#sell_form input[type="submit"]
+{
+	margin-top:10px;
+}
+#login_btn
+{
+	margin-bottom:20px;
+}
+#new
+{
+	margin-left: -10px;
+}

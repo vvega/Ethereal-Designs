@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<products>
+	<item>
+		<name>KIVSTA</name>
+		<type>Shade</type>
+		<price>25.00</price>
+		<image>img/lamp.png</image>
+		<description>Frame: Steel, Pigmented powder coating <br/> Shade: Polystyrene, 100 % cotton</description>
+	</item>
+	<item>
+		<name>KARLSTAD</name>
+		<type>Sofa</type>
+		<price>399.00</price>
+		<image>img/sofa.png</image>
+		<description>Frame: Particleboard, Plywood, Fiberboard <br/> Zig-zag spring: Steel <br/> Armrest frame: Polyester wadding, Polyurethane foam 1.2 lb/cu.ft., Polyurethane foam 2.0 lb/cu.ft.<br/> Seat cushion: Polyester wadding, High-resilience polyurethane foam (cold foam) 2.5 lb/cu.ft.<br/> Back cushion: Polyester fiber fill, Polyurethane foam 1.2 lb/cu.ft.<br/> Leg: Solid birch<br/> <br/> Lining: Non-woven polypropylene<br/> Total composition: 100 % cotton</description>
+	</item>
+	<item>
+		<name>STEFAN</name>
+		<type>Chair</type>
+		<price>19.99</price>
+		<image>img/chair.png</image>
+		<description>Solid pine, Stain, Clear acrylic lacquer</description>
+	</item>
+</products>

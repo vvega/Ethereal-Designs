@@ -1,0 +1,34 @@
+@charset "utf-8";
+/* Assignment 1 Styles - DIG4503  */
+
+#fortune_container
+{
+	width: 650px;
+	height: 560px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align: center;
+	padding-top: 50px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	background-image:url('../img/fortune_bg.png');
+}
+#fortune_container img
+{
+	border: 2px solid #FFFFFF;
+	margin-bottom: 30px;
+}
+#fortune
+{
+	margin-left:auto;
+	margin-right:auto;
+	height: 70px;
+	width: 420px;
+	margin-bottom: 50px;
+	background-image:url('../img/fortune_paper.png');
+	visibility:hidden;
+}
+#fortune p 
+{
+	padding-top: 25px;
+}
+

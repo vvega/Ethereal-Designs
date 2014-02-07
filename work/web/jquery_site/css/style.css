@@ -1,0 +1,213 @@
+@charset "utf-8";
+/* Veronica Vega - DIG4503 Assignment 3 Styles */
+#main
+{
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid #999;
+	height: 768px;
+	width: 1024px;
+	background-image: url('../img/main_room.png');
+	overflow:hidden;
+}
+body
+{
+	background-color:#333;
+}
+#detail1
+{
+	height: 50px;
+	width: 50px;
+	background-image: url('../img/button.png');
+}
+#detail1:hover
+{
+	background-position: -53.5px 0px;
+}
+#detail1:active
+{
+	background-position: -107px 0px;
+}
+#detail2
+{
+	height: 50px;
+	width: 50px;
+	background-image: url('../img/button.png');
+}
+#detail2:hover
+{
+	background-position: -53.5px 0px;
+}
+#detail2:active
+{
+	background-position: -107px 0px;
+}
+#detail3
+{
+	height: 50px;
+	width: 50px;
+	background-image: url('../img/button.png');
+}
+#detail3:hover
+{
+	background-position: -53.5px 0px;
+}
+#detail3:active
+{
+	background-position: -107px 0px;
+}
+#lamp
+{
+	margin-top: 170px;
+	margin-left: 285px;
+	width: 170px;
+	height: 115px;
+}
+#chair
+{
+	float: right;
+	margin-top: 60px;
+	width: 140px;
+	height: 115px;
+}
+#sofa
+{
+	margin-left: 200px;
+	margin-top: 150px;
+	width: 170px;
+	height: 115px;
+}
+/* tooltip styling. by default the element to be styled is .tooltip  */
+.tooltip {
+	display:none;
+	background-image: url('../img/tooltip_small.png');
+	font-size:16px;
+	height:40px;
+	width:230px;
+	text-align: center;
+	padding:25px;
+	color:#000;	
+}
+#home
+{
+	margin-left: 30px;
+	margin-top: 13px;
+	float: left;
+	height: 50px;
+	width: 50px;
+	background-image: url('../img/home_btn.png');
+}
+#home:hover
+{
+	background-position:-53px 0px;
+}
+#home:active
+{
+	background-position: -107px 0px;
+}
+#gallery
+{
+	margin-left: 10px;
+	margin-top: 13px;
+	float:left;
+	height: 50px;
+	width: 50px;
+	background-image: url('../img/gallery_btn.png');
+}
+#gallery:hover
+{
+	background-position: -52px 0px;
+}
+#gallery:active
+{
+	background-position: -107px 0px;
+}
+#container .tooltip
+{
+	padding:0;
+	display:none;
+	background-image: url('../img/menu_bg.png');
+	font-size:16px;
+	height:70px;
+	width:180px;
+	text-align: center;
+	color:#000;
+	margin-left:-400px;
+}
+#container
+{
+	height: 768px;
+	width: 1024px;
+		margin-left: auto;
+	margin-right: auto;
+}
+#details
+{
+	padding: 25px;
+	float: right;
+	margin-top: 410px;
+	height: 280px;
+    width: 455px;
+	background-image: url('../img/details_bg.png');
+}
+.overlay {
+	display:none;
+	background-image: url('../img/overlay.png');
+	font-size:16px;
+	height:460px;
+	width:650px;
+	overflow:hidden;
+	-moz-box-shadow:0 0 100px 20px #000;
+	-webkit-box-shadow: 0 0 90px #000;	
+	margin-left:150px;
+	margin-top:-600px;
+	text-align: center;
+	padding:25px;
+	color:#000;	
+	z-index:10000;
+}
+.thumb
+{
+	border: 2px solid #000;
+	float: left;
+	margin-left: 45px;
+	margin-top: 30px;
+}
+#infoDiv
+{
+	float:left;
+	width: 650px;
+	text-align: left;
+	margin-top: 20px;
+}
+#exit
+{
+	margin-top: -20px;
+	margin-right: -20px;
+	float: right;
+	height: 50px;
+	width: 50px;
+	background-image: url('../img/exit.png');
+}
+#exit:hover
+{
+	background-position:-53px 0px;
+}
+#exit:active
+{
+	background-position: -107px 0px;
+}
+#kitty
+{
+	margin-top: 170px;
+	width: 200px;
+	height: 100px;
+	float: right;
+}
+#the_couch
+{
+	margin-left: 360px;
+	width: 500px;
+	height: 360px;
+	margin-top: -150px;
+}

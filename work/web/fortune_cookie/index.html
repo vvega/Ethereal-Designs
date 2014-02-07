@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Fortune Cookie Guru</title>
+<style type = "text/css">
+	@import url('css/reset.css');
+	@import url('css/960.css');
+	@import url('css/text.css');
+	@import url('css/styles.css');
+</style>
+<script type = "text/javascript" src = "js/a1.js"></script>
+</head>
+<body>
+	<div class = "container_12">
+    	<div class = "grid_12">
+            <div id = "fortune_container">
+                <h3> Welcome to the Cookie Guru!</h3>
+                <p>Click on the cookie to reveal a mystical and clearly non-randomly-generated fortune!</p>      
+                 <img src = "img/fortune_cookie.png" alt = "fortune_image" onclick = "getFortune()" onmouseover = "changeCursor()" onmouseout = "changeBack()"/>
+                <div id = "fortune">
+                    <!-- Fortune goes here -->
+                </div>
+            </div>
+         </div>
+    </div>
+</body>
+</html>

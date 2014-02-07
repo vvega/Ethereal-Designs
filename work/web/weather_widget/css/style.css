@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* Veronica Vega - Assignment 2 CSS */
+#main_container
+{
+	background-image: url('../img/bg_default.png');
+	background-repeat: no-repeat;
+	padding-left: 50px;
+	padding-top: 15px;
+	height: 500px;
+	margin-left: 100px;
+}
+body{background-color:#cacaca; color: #FFFFFF; font-size: 12px;}
+h1,h2,h3,h4,h5
+{
+	margin:0;
+}
+#weatherform div
+{
+	float: left;
+	margin-left: 10px;
+}
+#weatherform
+{
+	width: 300px;
+}
+#weatherform input[type="submit"]
+{
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-bottom: 15px;
+
+}
+#results_container img
+{
+	background-color: #FFFFFF;
+}
+#results_container
+{
+	margin-top: 5px;
+	border-right: 1px solid #CCCCCC;
+	padding-right: 0px;
+}
+#events_container
+{
+	width:300px;
+	margin-top: 10px;
+	float: left;
+}
+#events_title
+{
+	margin-left: 25px;
+	margin-top: 100px;
+	height: 60px;
+	width: 250px;
+}
+#events_container img
+{
+	margin-left: -10px;
+	margin-right: 10px;
+}
+#events_container p
+{
+	margin-top: 5px;
+}
+#progress
+{
+	margin-top: 30px;
+	height: 24px;
+	width: 24px;
+	background-image: url('../img/loader.gif');
+	visibility:hidden;
+}
